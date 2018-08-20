@@ -1,0 +1,14 @@
+<h2 class="confirm-title">これでいい？</h2>
+<div class="confirm-content">
+  <%= form_with(model: @talk, url:talks_path, local:true) do |form| %>
+    <%= form.hidden_field :content %>
+
+    <p><%= @talk.content %></p>
+    <%= form.submit "話す",class: "btn btn-info btn-lg talkbtn " %>
+  <% end %>
+
+  <%= form_with(model: @talk, url: new_talk_path, local: true, method: 'get') do |form| %>
+    <%= form.hidden_field :content %>
+    <%= form.submit "もどる", name: 'back', class: "brn btn-default backbtn" %>
+  <% end %>
+</div>

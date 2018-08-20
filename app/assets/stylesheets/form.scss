@@ -1,0 +1,27 @@
+#error-explanation {
+  text-align: center;
+}
+
+#error-explanation li {
+  list-style: none;
+}
+
+.error-count {
+  color: red;
+}
+
+.form-content {
+  text-align: center;
+  padding-top: 30px;
+}
+
+.form-content input {
+  width: 400px;
+  height: 35px;
+  font-size: 2rem;
+}
+
+.form-btn {
+  text-align: center;
+  padding: 20px;
+}

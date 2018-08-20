@@ -1,0 +1,14 @@
+<div class="index-title">
+  <h1>会話一覧</h1>
+</div>
+<div class="index-notice">
+  <p><%= notice %></p>
+</div>
+<div class="index-content">
+  <% @talks.each do |talk| %>
+    <span class="index-speech"><%= talk.content %></span>
+    <span><%= link_to '取り消す', talk_path(talk.id), method: :delete, data: { confirm: 'ホントに取り消す？'}, class: "btn btn-danger btn-sm index-deletebtn" %></span>
+    <span><%= link_to '言い直す', edit_talk_path(talk.id), class: "btn btn-success btn-sm index-editbtn", data: { confirm: 'ホントに言い直す？'} %></span>
+    <hr>
+  <% end %>
+</div>

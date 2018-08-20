@@ -1,0 +1,33 @@
+.top-logo {
+  padding-bottom: 15%;
+  width: 100%;
+  height: 400px;
+  background-size: 800px;
+  background-image: url("background.png");
+  background-attachment: fixed;
+}
+
+.top-logo h1 {
+  color: royalblue;
+  font-size: 10rem;
+  padding-top: 150px;
+  margin-left: 50px;
+}
+
+.top-content {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.top-content h2 {
+  font-size: 5rem;
+}
+
+.content-logo {
+  color: royalblue;
+}
+
+.top-content p {
+  margin-top: 30px;
+  font-size: 2rem;
+}

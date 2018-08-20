@@ -1,0 +1,18 @@
+<%= form_with(model: @talk, local: true, url:choose_new_or_edit) do |form| %>
+  <% if @talk.errors.any? %>
+    <div id="error-explanation">
+      <h2><span class="error-count"><%= @talk.errors.count %>つ</span>ルールを破りました。</h2>
+      <ul>
+        <% @talk.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <div class="form-content">
+    <%= form.text_field :content %>
+  </div>
+  <div class="form-btn">
+  <%= form.submit "話す", class: "btn btn-info btn-lg" %>
+  </div>
+<% end %>
